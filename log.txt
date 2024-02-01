@@ -1,0 +1,86 @@
+Page Requests Standard_Providers:
+	
+	https://faker.readthedocs.io/en/master/providers/faker.providers.address.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.internet.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.credit_card.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.emoji.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.phone_number.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.lorem.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.date_time.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.file.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.ssn.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.misc.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.currency.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.sbn.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.bank.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.barcode.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.profile.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.person.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.python.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.isbn.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.user_agent.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.automotive.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.job.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.geo.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.color.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.company.html
+	https://faker.readthedocs.io/en/master/providers/faker.providers.passport.html
+
+Parent Packages: 
+
+	
+
+	faker.providers.address
+
+	faker.providers.internet
+
+	faker.providers.credit_card
+
+	faker.providers.emoji
+
+	faker.providers.phone_number
+
+	faker.providers.lorem
+
+	faker.providers.date_time
+
+	faker.providers.file
+
+	faker.providers.ssn
+
+	faker.providers.misc
+
+	faker.providers.currency
+
+	faker.providers.sbn
+
+	faker.providers.bank
+
+	faker.providers.barcode
+
+	faker.providers.profile
+
+	faker.providers.person
+
+	faker.providers.python
+
+	faker.providers.isbn
+
+	faker.providers.user_agent
+
+	faker.providers.automotive
+
+	faker.providers.job
+
+	faker.providers.geo
+
+	faker.providers.color
+
+	faker.providers.company
+
+	faker.providers.passport
+
+WARNINGS: 
+
+
+Warning lines can be lines that contain objects thats cause errors

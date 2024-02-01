@@ -1,0 +1,3 @@
+from ..de_CH import Provider as DeChBankProvider
+
+class Provider(DeChBankProvider): ...

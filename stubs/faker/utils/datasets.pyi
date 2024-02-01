@@ -1,0 +1,3 @@
+from faker.typing import OrderedDictType as OrderedDictType
+
+def add_ordereddicts(*odicts: OrderedDictType) -> OrderedDictType: ...

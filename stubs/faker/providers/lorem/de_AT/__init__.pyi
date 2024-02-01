@@ -1,0 +1,3 @@
+from ..de_DE import Provider as GermanProvider
+
+class Provider(GermanProvider): ...

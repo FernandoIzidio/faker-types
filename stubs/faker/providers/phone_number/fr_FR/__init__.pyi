@@ -1,0 +1,9 @@
+from .. import Provider as PhoneNumberProvider
+from _typeshed import Incomplete
+
+class Provider(PhoneNumberProvider):
+    formats: Incomplete
+    area_codes: Incomplete
+    def area_code_without_separator(self) -> str: ...
+    def area_code_with_separator(self) -> str: ...
+    def phone_number(self) -> str: ...

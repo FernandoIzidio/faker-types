@@ -1,0 +1,36 @@
+from .. import Provider as AddressProvider
+from _typeshed import Incomplete
+from typing import Optional
+
+class Provider(AddressProvider):
+    city_formats: Incomplete
+    city_prefixes: Incomplete
+    city_suffixes: Incomplete
+    street_prefixes: Incomplete
+    street_suffixes: Incomplete
+    village_prefixes: Incomplete
+    address_formats: Incomplete
+    building_number_formats: Incomplete
+    postcode_formats: Incomplete
+    secondary_address_formats: Incomplete
+    street_address_formats: Incomplete
+    street_name_formats: Incomplete
+    cities: Incomplete
+    countries: Incomplete
+    states: Incomplete
+    states_abbr: Incomplete
+    states_postcode: Incomplete
+    streets: Incomplete
+    villages: Incomplete
+    def city(self) -> str: ...
+    def city_prefix(self) -> str: ...
+    def postcode(self) -> str: ...
+    def postcode_in_state(self, state_abbr: Optional[str] = None) -> str: ...
+    def secondary_address(self) -> str: ...
+    def administrative_unit(self) -> str: ...
+    state = administrative_unit
+    def state_abbr(self) -> str: ...
+    def street(self) -> str: ...
+    def street_prefix(self) -> str: ...
+    def village(self) -> str: ...
+    def village_prefix(self) -> str: ...

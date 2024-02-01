@@ -1,0 +1,6 @@
+from .. import Provider as SsnProvider
+
+def checksum(sin): ...
+
+class Provider(SsnProvider):
+    def ssn(self) -> str: ...
