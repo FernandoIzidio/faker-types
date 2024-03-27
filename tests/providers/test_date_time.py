@@ -193,11 +193,17 @@ class TestDateTime(unittest.TestCase):
         assert self.fake.iso8601(tzinfo=utc, sep=" ")[10] == " "
         assert self.fake.iso8601(tzinfo=utc, sep="_")[10] == "_"
 
-    @pytest.mark.skipif(not sys.platform.startswith("win"), reason="windows does not support sub second precision")
+    @pytest.mark.skipif(
+        not sys.platform.startswith("win"),
+        reason="windows does not support sub second precision",
+    )
     def test_iso8601_fractional_seconds_win(self):
         assert len(self.fake.iso8601()) == 19
 
-    @pytest.mark.skipif(sys.platform.startswith("win"), reason="non windows does support sub second precision")
+    @pytest.mark.skipif(
+        sys.platform.startswith("win"),
+        reason="non windows does support sub second precision",
+    )
     def test_iso8601_fractional_seconds_non_win(self):
         assert len(self.fake.iso8601()) == 26
 
@@ -233,6 +239,10 @@ class TestDateTime(unittest.TestCase):
         random_date = self.fake.date_time_between_dates(datetime_start, datetime_end)
         assert datetime_start <= random_date
         assert datetime_end >= random_date
+
+    def test_date_time_between_dates_with_no_date_overlap(self):
+        with pytest.raises(ValueError):
+            self.fake.date_time_between_dates("-1y", "-2y")
 
     def test_date_time_between_dates_with_tzinfo(self):
         timestamp_start = random.randint(0, 2000000000)
@@ -545,13 +555,19 @@ class TestDateTime(unittest.TestCase):
             if platform.system() != "Windows":
                 del os.environ["TZ"]
 
-    @pytest.mark.skipif(not sys.platform.startswith("win"), reason="windows does not support sub second precision")
+    @pytest.mark.skipif(
+        not sys.platform.startswith("win"),
+        reason="windows does not support sub second precision",
+    )
     def test_unix_time_win(self):
         unix_time = self.fake.unix_time()
         assert isinstance(unix_time, float)
         assert unix_time % 1 == 0.0
 
-    @pytest.mark.skipif(sys.platform.startswith("win"), reason="non windows does support sub second precision")
+    @pytest.mark.skipif(
+        sys.platform.startswith("win"),
+        reason="non windows does support sub second precision",
+    )
     def test_unix_time_non_win(self):
         unix_time = self.fake.unix_time()
         assert isinstance(unix_time, float)

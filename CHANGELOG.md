@@ -1,5 +1,59 @@
 ## Changelog
 
+### [v24.4.0 - 2024-03-25](https://github.com/joke2k/faker/compare/v24.3.0...v24.4.0)
+
+* Add address words for `cs_CZ`. Thanks @george0st 
+
+### [v24.3.0 - 2024-03-18](https://github.com/joke2k/faker/compare/v24.2.1...v24.3.0)
+
+* Add phone number formats to nl_BE. Thanks @maximegmd.
+
+### [v24.2.1 - 2024-03-18](https://github.com/joke2k/faker/compare/v24.2.0...v24.2.1)
+
+* Return capitalized city names in `hu_HU`. Thanks @AlexLitvino.
+
+### [v24.2.0 - 2024-03-13](https://github.com/joke2k/faker/compare/v24.1.1...v24.2.0)
+
+* Add `uk-UA` credit card provider. Thanks @lozik4.
+* Upgrade `uk_UA` person provider. Thanks @lozik4.
+
+### [v24.1.1 - 2024-03-13](https://github.com/joke2k/faker/compare/v24.1.0...v24.1.1)
+
+* Fix prefix for male `bg_BG` names  Thanks @DimitarVanguelov.
+
+### [v24.1.0 - 2024-03-08](https://github.com/joke2k/faker/compare/v24.0.0...v24.1.0)
+
+* Add Grenville to `land_coords` in geo provider. Thanks @lozik4.
+* Fix Kyiv name. Thanks @lozik4.
+
+### [v24.0.0 - 2024-03-04](https://github.com/joke2k/faker/compare/v23.3.0...v24.0.0)
+
+* Fix returning random data for person provider in `et_EE` locale when the same seed value is set. Thanks @AlexLitvino.
+
+### [v23.3.0 - 2024-02-27](https://github.com/joke2k/faker/compare/v23.2.1...v23.3.0)
+
+* Add person, bank provider for `sk_SK` locale. Thanks @mhandl.
+
+### [v23.2.1 - 2024-02-19](https://github.com/joke2k/faker/compare/v23.2.0...v23.2.1)
+
+* fix: update `pydecimal` algorithm to ensure left part is not generated with a leading 0. Thanks @alexei.
+ 
+### [v23.2.0 - 2024-02-14](https://github.com/joke2k/faker/compare/v23.1.0...v23.2.0)
+
+* Allow Uniqueness and Localization. Thanks @moshemoshe137.
+
+### [v23.1.0 - 2024-02-07](https://github.com/joke2k/faker/compare/v23.0.0...v23.1.0)
+
+* Add `uk_UA` lorem provider. Thanks @lozik.
+
+### [v23.0.0 - 2024-02-06](https://github.com/joke2k/faker/compare/v22.7.0...v23.0.0)
+
+* Consistently throw an error if the start of a daterange is after the end. Thanks @prescod.
+
+### [v22.7.0 - 2024-02-05](https://github.com/joke2k/faker/compare/v22.6.0...v22.7.0)
+
+* Add `uk_UA` automotive provider. Thanks @lozik.
+
 ### [v22.6.0 - 2024-01-29](https://github.com/joke2k/faker/compare/v22.5.1...v22.6.0)
 
 * Add support for birthday and gender to  `uk_UA` `ssn` method. Thanks @lozik.
